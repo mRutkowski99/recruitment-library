@@ -1,0 +1,144 @@
+/* GLOBAL RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: #3685f6;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* FORM STYLE */
+.form {
+  width: min(90%, 50rem);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form--field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form--label {
+  font-weight: 500;
+}
+
+.form--input {
+  font: inherit;
+  padding: 0.5rem;
+  outline: none;
+  border: solid 2px transparent;
+}
+
+.error-msg {
+  color: red;
+  font-size: 1.3rem;
+  display: none;
+}
+
+.form--input.invalid {
+  border-color: red;
+}
+
+.form--input.invalid + .error-msg {
+  display: block;
+}
+
+.form--btn {
+  align-self: center;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-weight: 500;
+  background-color: #00214e;
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.form--btn:hover {
+  background-color: #022e6d;
+}
+
+.form--btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* ADDED BOOK LIST STYLE */
+.books-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.book {
+  margin-bottom: 1rem;
+  background-color: #00214e;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  width: min(80%, 70rem);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.book > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25%;
+}
+
+.book--type {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.book--author {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.book--priority {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
