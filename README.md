@@ -6,3 +6,5 @@ User is able to:
 - See message when priority number validation failed (integer number between 1 and 5)
 - See message when type validation failed (need to choose one)
 - Keep list unchanged after refeshing browser
+
+[Live version](https://mrutkowski99.github.io/recruitment-library/index.html)
