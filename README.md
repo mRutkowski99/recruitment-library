@@ -1,4 +1,4 @@
-﻿# Recriutment Task - Library
+﻿# Recriutment Task #2 - Library
 User is able to:
 - Add book to library with provided title, author, priority to read and type of book
 - See message when title validation failed (at least 1 character)
